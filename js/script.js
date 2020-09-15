@@ -15,7 +15,7 @@ $(document).ready(function(){
   for (var key in student){
     console.log(student[key]);
   }
-  console.log("-------fine esercizio---------");
+  console.log("-------fine esercizio 1---------");
 // esercizio due
  var students = [
    {
@@ -40,27 +40,26 @@ $(document).ready(function(){
    }
 
  }
- console.log("-------fine esercizio---------");
-
+ console.log("-------fine esercizio 2---------");
 // esercizio 3
-  var datiStud = ["Nome","Cognome","Eta"];
-  var classe = [
-    {
-      "nome" : "",
-      "cognome" : "",
-      "eta" : "",
+  var newName = prompt('Inserisci il nome del nuovo studente');
+  var newLastname = prompt('Inserisci il cognome del nuovo studente');
+  var newEta = prompt('Inserisci l\'età del nuovo studente');
+
+  students.push({
+    name: newName,
+    lastname: newLastname,
+    eta: newEta
+  });
+
+  for (var i = 0; i < students.length; i++) {
+
+    for (var key in students[i]){
+      var studenti = students[i];
+      console.log(studenti[key]);
     }
-  ];
 
-  for (var key in classe, i = 0){
-    var stud = prompt("Insersci "+ datiStud[i] + "del nuovo studente :");
-    $(classe[key]).push(stud);
-    i++;
-    console.log(classe[key]);
   }
-
-
-
-
+  console.log("-------fine esercizio 3---------");
 }
 );

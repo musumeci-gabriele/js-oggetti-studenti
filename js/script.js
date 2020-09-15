@@ -4,9 +4,16 @@
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 $(document).ready(function(){
-alert("ciao");
 
+var student = {
+  "nome" : "gabriele",
+  "cognome" : "musumeci",
+  "eta" : "37"
+}
 
+for (var key in student){
+  console.log(student[key]);
+}
 
 
 }
